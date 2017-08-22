@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="popup.css"/>
+		<script src='popup.js'></script>
+	</head>
+	<body>
+		<table style='padding:10px; width: 440px;'>
+			<tr style='background:white;'>
+				<td colspan=4>
+					<img src='icon.png' style='width:30px;height:30px;vertical-align:middle;padding-right:10px;' id='logo'/> <b style='color:#555;'>Multimedia Debugger</b>
+
+					<div style="position: relative; float: right;">
+					    <input id="btnActivar" class="css-checkbox" type="checkbox" name="titulares[]" value="noconf_349">
+					    <label for="btnActivar" class="css-label">Activar/Desactivar</label>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>tplib</td>
+				<td></td>
+				<td>
+					<div class="onoff">
+						<input id="btnTplib" class="css-checkbox" type="checkbox" name="titulares[]" value="noconf_349">
+					    <label for="btnTplib" class="css-label">Activar/Desactivar</label>
+					</div>
+				</td>
+				<td><img src='help.png' class='help' title='Usar librerías sin ofuscar'></td>
+			</tr>
+			<tr>
+				<td>mm_base</td>
+				<td><input type='text' id='txt_mmbase' value=''></input></td>
+				<td>
+					<div class="onoff">
+					    <input id="btnMMbase" class="css-checkbox" type="checkbox" name="titulares[]" value="noconf_349">
+					    <label for="btnMMbase" class="css-label">Activar/Desactivar</label>
+					</div>
+				</td>
+				<td><img src='help.png' class='help' title='Ruta base desde la que cargar scripts
+				
+Ejemplos:
+- "" para no aplicar
+- "//dominio" para cargar desde "dominio"
+- "pro" para cargar de producción
+- "int" para cargar de integración'></td>
+			</tr>
+			<tr>
+				<td>mm_publi</td>
+				<td><input type='text' id='txt_mmpubli' value=''></input></td>
+				<td>
+					<div class="onoff">
+						<input id="btnMMpubli" class="css-checkbox" type="checkbox" name="titulares[]" value="">
+					    <label for="btnMMpubli" class="css-label">Activar/Desactivar</label>
+					</div>
+
+				</td>
+				<td><img src='help.png' class='help' title='Ruta base desde la que cargar PrisaAd.js
+		
+Ejemplos:
+- "" para no aplicar
+- "//dominio" para cargar desde "dominio"
+- "pro" para cargar de producción
+- "int" para cargar de integración'></td>
+			</tr>
+
+			<tr>
+				<td>mm_lang</td>
+				<td><input type='text' id='txt_mmlang' value=''></input></td>
+				<td>
+					<div class="onoff">
+					    <input id="btnMMlang" class="css-checkbox" type="checkbox" name="titulares[]" value="">
+					    <label for="btnMMlang" class="css-label">Activar/Desactivar</label>
+					</div>
+				</td>
+				<td><img src='help.png' class='help' title='Idioma para mostrar textos en el player
+		
+Ejemplos:
+- "" para no aplicar
+- "es" para castellano
+- "ca" para catalán
+- "pt-br" para portugués'></td>
+			</tr>
+
+			<tr>
+				<td>mm_autoplay</td>
+				<td></td>
+				<td>
+					<div class="onoff">
+					    <input id="btnMMautoplay" class="css-checkbox" type="checkbox" name="titulares[]" value="">
+					    <label for="btnMMautoplay" class="css-label">Activar/Desactivar</label>
+					</div>
+				</td>
+				<td><img src='help.png' class='help' title='Forzar autoplay en los reset'></td>
+			</tr>
+			
+			<tr>
+				<td>Custom</td>
+				<td><textarea id='ta_custom'></textarea></td>
+				<td>
+					<div class="onoff">
+					    <input id="btnCustom" class="css-checkbox" type="checkbox" name="titulares[]" value="">
+					    <label for="btnCustom" class="css-label">Activar/Desactivar</label>
+					</div>
+				</td>
+				<td><img src='help.png' class='help' title='Introduce las variables que desees añadir a página separadas por ";"
+
+Ejemplo:
+miVariable=1;miVariable2=true;miVariable3="hola"'></td>
+			</tr>			
+		</table>
+
+		<div class="divBtns">
+			<div id='btn_debug' class="btns morado">DebugTop</div>
+			<div id='btn_compilation' class="btns morado">Compilaciones</div>
+			<div id="btnManagerInfo" class="btns morado">TopManager Info</div>
+		</div>
+		<div style='background:#333;color:white;text-align:center;padding-bottom:10px;padding-top:10px;font-size:12px;'>Versión 1.2.0</div>
+	</body>
+</html>

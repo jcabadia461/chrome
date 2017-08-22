@@ -1,0 +1,86 @@
+#logo,#btn_activo{
+	transition-duration: 0.5s;
+}
+body{
+	font-size:15px;
+	margin:0;
+}
+.verde{
+	background: -webkit-linear-gradient(-45deg, #8fc400 31%,#219900 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #8fc400 31%,#219900 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.rojo{
+	background: -webkit-linear-gradient(-45deg, #f75e00 33%,#c60000 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #f75e00 33%,#c60000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.azul{
+	background: -webkit-linear-gradient(-45deg, #4096ee 46%,#3662c9 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #4096ee 46%,#3662c9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.morado{
+	background: -webkit-linear-gradient(-45deg, #960093 0%,#59002e 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #960093 0%,#59002e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	color: white;
+}
+.help{
+	width:18px;
+	height:18px;
+	vertical-align:middle;
+}
+table { border-collapse: collapse; }
+
+tr{	background-color:#dddddd; }
+
+tr:nth-child(even) { background-color:#eeeeee; }
+td{	padding:10px; }
+
+input[type=checkbox].css-checkbox {
+	position:absolute;
+	z-index:-1000;
+	left:-1000px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height:1px;
+	width:1px;
+	margin:-1px;
+	padding:0;
+	border:0;
+}
+input[type=checkbox].css-checkbox + label.css-label {
+    height: 25px;
+    line-height: 25px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    font-size: 48px;
+    vertical-align: middle;
+    cursor: pointer;
+    text-indent: -9999px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+	background-image:url(./check_check.jpg);
+}
+label.css-label {
+	background-image:url(./check_uncheck.jpg);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+.onoff { position: relative;margin-top: -12px;margin-right: -10px; }
+
+
+.divBtns { width: 100%;background-color: white;display: inline-flex;flex-wrap: wrap;flex-direction: row;justify-content: center; }
+.btns {	padding: 10px; background-color: antiquewhite; text-align: center; margin: 6px; border-radius: 5px;}
+
+
