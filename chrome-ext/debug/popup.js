@@ -57,6 +57,7 @@ function init() {
 	   	chrome.tabs.getSelected(null, function(tab) {
 			var _html = "var tmp = new Event('showInfo2'); document.dispatchEvent(tmp);";
 			chrome.tabs.executeScript(tab.id, {code: _html});
+			window.close();
 		});
 	})
 
